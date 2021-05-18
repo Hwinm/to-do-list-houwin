@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(102,111,196);
+    background: linear-gradient(90deg, rgba(102,111,196,1) 0%, rgba(47,70,143,1) 50%, rgba(1,15,60,1) 100%);
+    font-family: "Open Sans", sans-serif;
+}
+
+.blok{
+    max-width: 600px;
+    background: cornflowerblue;
+    margin: 100px auto;
+    width: 100%;
+    padding: 30px;
+
+}
+
+header {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.todo-container{
+    margin-top: 20px;
+}
+.todo-list li{
+    background: white;
+    list-style: none;
+    position: relative;
+    height: 50px;
+    padding: 15px 15px;
+    margin-bottom: 10px;
+}
+.todo-list li span{
+    position: absolute;
+    right: 0px;
+    top: 0;
+}
+
+form {
+    width: 100%;
+}
+form input{
+    padding: 1rem;
+    font-size: 1.5rem;
+    border: none; 
+}
+
+.todo-input{
+    width: 80%;
+    margin-right: -5px;
+    outline: none;
+}
+
+.bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+/* buttons */
+
+/*verwijder button*/
+.todo-list li button{
+    background: orangered;
+    height: 50px;
+    width: 80px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    border: none;
+    color: white;
+}
+
+.todo-list li button:hover{
+    background: orange;
+}
+
+/*voeg toe button*/
+#todo-button{
+    background: slateblue;
+    cursor: pointer;
+    width: 20%;
+    color: white;
+}
+
+#todo-button:hover{
+    background: blueviolet;
+}
+
+/*verwijder alles button*/
+.button-bottom{
+    background: slateblue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 15px 20px;
+}
+.button-bottom:hover{
+    background: blueviolet;
+}
